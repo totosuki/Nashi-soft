@@ -1,0 +1,34 @@
+/* 方眼紙 */
+.box {
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+                      linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+    background-size: 16px 16px;
+    background-repeat: repeat;
+    background-position: center center;
+
+    /* 迷いどころ */
+    /* background-color: rgb(255,245,203); */
+
+/* カメラ */
+}
+#camera{
+  position: absolute;
+  top: 25px;
+  left: -35px;
+  width: 20%;
+  height: 20%;
+  transform:rotate(-45deg); 
+}
+
+/* ロゴアニメーション */
+.nashi-logo{fill:none;stroke:#0071BC;stroke-linecap:round;stroke-linejoin:round;}
+
+#anime_nashi{stroke-dasharray:1091 1093;stroke-dashoffset:1092;animation:anime_draw 2000ms linear 0ms forwards;}
+#anime_so{stroke-dasharray:282 284;stroke-dashoffset:283;animation:anime_draw 2000ms linear 166ms forwards;}
+#anime_hu{stroke-dasharray:327 329;stroke-dashoffset:328;animation:anime_draw 2000ms linear 333ms forwards;}
+#anime_to{stroke-dasharray:268 270;stroke-dashoffset:269;animation:anime_draw 2000ms linear 500ms forwards;}
+#anime_dou{stroke-dasharray:906 908;stroke-dashoffset:907;animation:anime_draw 2000ms linear 666ms forwards;}
+#anime_kou{stroke-dasharray:874 876;stroke-dashoffset:875;animation:anime_draw 2000ms linear 833ms forwards;}
+#anime_kai{stroke-dasharray:811 813;stroke-dashoffset:812;animation:anime_draw 2000ms linear 1000ms forwards;}
+@keyframes anime_draw{50%{stroke-dashoffset:0;}}
+@keyframes anime_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}
