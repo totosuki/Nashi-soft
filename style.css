@@ -1,0 +1,27 @@
+/* 方眼紙 */
+.box {
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+                      linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+    background-size: 16px 16px;
+    background-repeat: repeat;
+    background-position: center center;
+
+    /* 迷いどころ */
+    /* background-color: rgb(255,245,203); */
+
+/* カメラ */
+}
+
+#camera{
+  position: absolute;
+  top: 25px;
+  left: -35px;
+  width: 20%;
+  height: 20%;
+  transform:rotate(-45deg); 
+}
+
+/* ロゴアニメーション */
+.nashi-logo{fill:none;stroke:#0071BC;stroke-linecap:round;stroke-linejoin:round;}
+@keyframes anime_draw{100%{stroke-dashoffset:0;}}
+@keyframes anime_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}
